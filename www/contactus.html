@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="contactus.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/contactus.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>NK Super Market </title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .center {
+            margin: auto;
+            width: 20%;
+            padding: 10px;
+        }
+		
+		.position {
+			position: absolute;
+			left: 950px;
+			top: 200px;	
+		}
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-color: #0062cc;
+
+        }
+
+        input[type=submit] {
+            background-color: #0062cc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0062cc;
+        }
+
+        /* Style the container/contact section */
+        .container1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column1 {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/home.html">NK Super Market</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shoppinglist.html">Shopping List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/vegetables.html">Vegetables</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fruits.html">Fruits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/meat.html">Meat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/drinks.html">Drinks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/other.html">Other</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contactus.html">Contact Us
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/recentpurchase.html">Recent Purchases</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  <button class="btn btn-primary" onclick="logout()">Logout</button>
+</nav>
+
+<div class="container1">
+    <div style="text-align:center">
+        <br>
+        <br>
+        <br>
+		<div class="col-lg-12 text-center">
+        <h1>Contact Us</h1>
+        <p>Feel free to contact us any time!</p>
+    </div>
+    </div>
+
+	
+<div class="container1">
+
+    <div class="row1">
+
+        <div class="column1">
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name..">
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter Your Phone Number.." onkeypress="return isNumber(event)">
+                <label for="messages">Message</label>
+                <textarea id="messages" name="messages" placeholder="Write A Message.." style="height:190px"></textarea>
+
+                <button class="btn btn-primary" onclick="addContactMessage()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="position">
+    <div class="row1">
+                <div class="site-content">
+                    <strong>Opening Hours:</strong>
+                    <br>
+                    Sunday - Thursday: 08:00 - 22:00<br>
+                    Friday: 08:00 - 16:00<br>
+                    Saturday: Closed<br>
+                    <br>
+
+                    <strong>E-mail:</strong><br>
+                    <a href="mailto:kanonichnoam@gmail.com">kanonichnoam@gmail.com</a><br>
+
+                    <br>
+
+                    <strong>Our Location:</strong><br>
+                    <a href="https://goo.gl/maps/tXX8dw4tg9u">Kanfei Nesharim St, Hertsliya, 4610101, Israel</a>
+                </div>
+                <br>
+                <div class="site-content map">
+                    <iframe
+                            width="100%"
+                            height="250"
+                            frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgkAuW8d2b0kGVUdSKFL_xlECeJ9gYqMg&q=32.1751504,34.8391737" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+
+</body>
+</html>

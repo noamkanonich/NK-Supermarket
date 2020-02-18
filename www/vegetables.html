@@ -1,0 +1,113 @@
+<html>
+<head>
+    <script type="text/javascript" src="shoppinglist.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NK Super Market </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/home.html">NK Super Market</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/shoppinglist.html">Shopping List</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/vegetables.html">Vegetables
+                        <span class="sr-only">(current)</span>
+                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fruits.html">Fruits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/meat.html">Meat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/drinks.html">Drinks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/other.html">Other</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/recentpurchase.html">Recent Purchases</a>
+
+            </ul>
+        </div>
+    </div>
+  <button class="btn btn-primary" onclick="logout()">Logout</button>
+</nav>
+
+<div class="w3-container w3-center w3-animate-opacity">
+
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>The Vegetables Department</h1>
+                <br>
+                <div style="border: 2px solid #000; padding: 20px; text-align: center; font-size: 16px">
+                    <div id="about_id">
+                        <label class="lead" for="list_headline"><b>Your Vegetables Products List :</b></label>
+                        <br>
+                        <br>
+                        <textarea name="specificProductsList" id="listOfProducts" required readonly  rows="10" cols="50"></textarea>
+                        <br>
+                        <br>
+                        <button class="btn btn-primary" onclick="showTheSpecificProductsList('vegetablesProducts')">Show Vegetables List</button>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
