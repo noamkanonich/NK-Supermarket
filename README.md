@@ -1,11 +1,11 @@
 # NK Supermarket
 a heavy local server-client project, involving node.js, persistent DB, Json files, JS, CSS and more.
 
-# Screenshot
+# Screenshots
 
+![NK Supermarket 2](https://user-images.githubusercontent.com/55742997/74730858-97268700-524f-11ea-957a-5f20bc16765b.jpg)
 
-
-
+![NK supermarket](https://user-images.githubusercontent.com/55742997/74730870-9beb3b00-524f-11ea-97ea-beea31fc0057.jpg)
 
 
 
