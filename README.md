@@ -1,5 +1,5 @@
 # NK Supermarket
-a heavy local server-client project, involving node.js, persistent DB, Json files, JS, HTML, CSS and more.
+a heavy full-stack local server-client project, involving node.js, persistent DB, Json files, JS, HTML, CSS and more.
 
 # Screenshots
 
